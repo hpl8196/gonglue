@@ -1,0 +1,133 @@
+body,ul,ol,h1,h2,h3,h4,h5,h6,p{margin: 0;padding: 0;}
+ul,ol{list-style: none;}
+img{vertical-align: top;}
+a{text-decoration: none;}
+.clearfix:after{
+	content: "";
+	display:block;
+	clear: both;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.gWidth{
+    width: calc(100% - .6rem);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.yb_conct{
+	position:fixed;
+	z-index:9999999;
+	top:16rem; right:0;
+	cursor:pointer;
+	transition:all .3s ease;
+}
+.yb_bar ul li{
+    height: 2.3rem;
+	font-size: .2rem;
+	color:#fff;
+	margin-bottom:3px;
+    overflow:hidden;
+    letter-spacing: 0;
+    background-color: #0760E5;
+    text-align: center;
+}
+.yb_bar ul li:last-child{
+    height: 1.6rem;
+}
+.yb_bar ul li .img{
+    margin-top: .3rem;
+    width: 1rem;
+    height: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.yb_bar ul li .img img{
+    width: 100%;
+    height: 100%;
+}
+.yb_bar ul li .nr{
+    float: left;
+    width: 2.8rem;
+	height: 2.8rem;
+}
+.yb_bar ul li .tc{
+    float: right;
+    width: 0.1px;
+    height: 2.3rem;
+    background-color: #0760E5;
+    transition:all .5s ease;
+}
+
+.logo{
+    width: 3.8rem;
+    height: 1rem;
+    margin-top: .3rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+.head{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: #fff;
+}
+.head .nav{
+    position: absolute;
+    right: 0;
+    top: 0rem;
+    z-index: 1000;
+}
+.navxl{
+    width: 100%;
+    position: fixed;
+    top: -100%;
+    left: 0;
+    z-index: 998;
+    background-color: #fff;
+    transition: .36s;
+    height: 100%;
+}
+.navxl1{
+    top: -100%;
+}
+.navxl2{
+    top: 1.2rem;
+    
+}
+.navxl ul{
+    
+    font-size: 1.15rem;
+    line-height: 4.4rem;
+}
+.navxl li{
+    text-align: center;
+}
+.navxl .xlph{
+    width: 9.02rem;
+    height: 2.125rem;
+    margin-top: 1.4rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.5rem;
+}
+.navxl .xlph img{
+    width: 100%;
+    height: 100%;
+}
+.banner{
+    margin-top: 1.8rem;
+}
+

@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="font/iconfont.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <title>首页</title>
+    <script>
+     window.onload = window.onresize = function(){		 
+        var view_width = document.getElementsByTagName('html')[0].getBoundingClientRect().width;
+		//找到标签名为html的第一个
+        var _html = document.getElementsByTagName('html')[0];
+		//如果屏幕宽度大于640 
+		//就用 640/16=40
+		//小于640的时候 不确定 也是尺寸/40
+        view_width>640?_html.style.fontSize = 640 / 16 + 'px':_html.style.fontSize = view_width / 16 + 'px';
+		//最大网页尺寸640 
+		//最大字体（根字体大小） 40
+    }
+    </script>
+</head>
+<body>
+    <div class="head">
+        <div class="logo"><img src="img/logo.png" alt=""></div>
+        <div class="nav"><span class="iconfont icon-spread-h-bar"></span></div>
+    </div>
+    <div class="navxl navxl1">
+        <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="gygl.html">关于红马</a></li>
+            <li><a href="Construction.html">施工案例</a></li>
+            <li><a href="new.html">新闻资讯</a></li>
+            <li><a href="lxwm.html">联系我们</a></li>
+        </ul>
+        <div class="xlph"><img src="img/xlph.png" alt=""></div>
+    </div>
+    <div class="swiper-container banner">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide c1"><img src="img/banner1.png" alt=""></div>
+            <div class="swiper-slide c2"><img src="img/banner1.png" alt=""></div>
+            <div class="swiper-slide c3"><img src="img/banner1.png" alt=""></div>
+        </div>
+        
+        
+        <!-- 如果需要导航按钮 -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        
+        <!-- 如果需要滚动条 -->
+        
+    </div>
+    
+    <script>        
+        var mySwiper = new Swiper ('.swiper-container', {
+           // 垂直切换选项
+          loop: true, // 循环模式选项
+          
+          
+          // 如果需要前进后退按钮
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        })        
+    </script>
+    <script>
+    $('.nav').click(function(){
+        $('.nav span').toggleClass("icon-spread-h-bar");
+        $('.navxl').toggleClass("navxl1");
+        $('.nav span').toggleClass("icon-cha");
+        $('.navxl').toggleClass("navxl2");
+    })
+    </script>
+
+    <div class="con1 gWidth">
+        <div class="timg"><img src="img/img1.png" alt=""></div>
+        <h3>景观亮化</h3>
+        <h4>景观照明设计、施工一体化</h4>
+        <h5>景观亮化施工案例</h5>
+        <p>河北攻略集团是华北地区单立柱塔型广告牌最具规模、实力生产制作企业。从现场踏勘、设计施工、原料采购、半成品加工到现场组装、后期保养，全过程服务，想客户所想，替广告主负贵，以确保其结构合理，视觉冲击力强，经久耐用。</p>
+        <div class="con1bot">
+            <div class="top">
+                <h6>卓润温泉建国饭店</h6>
+            </div>
+            <div class="bottom">
+                <div class="img1"><img src="img/img3.png" alt=""></div>
+                <div class="img2"><img src="img/img4.png" alt=""></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="lr clearfix">
+        <span>&lt;</span>
+        <span>&gt;</span>
+    </div>
+
+
+    <div class="zj">
+        <div class="text gWidth">
+            <h3>走进河北攻略</h3>
+            <h4>“广告行业文明守信先进单位”和“讲信誉、重质量推荐单位”</h4>
+            <p>攻略集团专业承揽各种广告工程、建筑钢结构工程、城市景观照明工程，兼营高速公路媒体、城市大屏幕、面翻、公交站亭、路牌等户外媒体的投资运营业务。是河北省唯一家具有建筑业和广告业企业资质的文化传媒类型的集团公司</p>
+            <div class="more">
+                <p><a href="###">查看详情<span class="iconfont">&#xe503;</span></a></p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="show gWidth">
+        <h5>
+            <a href="###" class="active">攻略工厂展示</a>
+            <span>/</span>
+            <a href="###">攻略荣誉展示</a>
+        </h5>
+        <ul>
+            <li class="active">
+                <ul class="zl">
+                    <li>
+                        <div class="img">
+                            <img src="img/img5.png" alt="">
+                        </div>
+                        <p>高炮与单立柱广告牌正在装车</p>
+                    </li>
+                    <li>
+                        <div class="img">
+                            <img src="img/img6.png" alt="">
+                        </div>
+                        <p>单立柱广告牌——攻略传媒厂区</p>
+                    </li>
+                </ul>
+            </li>
+            <li></li>
+            <li>
+                <ul class="zl">
+                    <li>
+                        <div class="img">
+                            <img src="img/img6.png" alt="">
+                        </div>
+                        <p>单立柱广告牌——攻略传媒厂区</p>
+                    </li>
+                    <li>
+                        <div class="img">
+                            <img src="img/img5.png" alt="">
+                        </div>
+                        <p>高炮与单立柱广告牌正在装车</p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <script>
+        $('.show h5 a').click(function(){
+            $('.show h5 a').removeClass('active');
+            $(this).addClass('active');
+            $('.show>ul>li').removeClass('active');
+            $('.show>ul>li').eq($(this).index()).addClass('active');
+        })
+    </script>
+
+
+
+
+    <div class="zx gWidth">
+        <h5>红马新闻资讯</h5>
+        <p>每年新增加合作广告公司客户近百家，形成了庞大的户外媒体供应和客户资源平台</p>
+
+        <ul class="zxnav clearfix">
+            <li class="active">广告资讯</li>
+            <li>企业动态</li>
+            <li>媒体动态</li>
+        </ul>
+
+        <ul class="zxb">
+            <li class="active">
+                <ul class="zxbf">
+                    <li>
+                        <div class="img"><img src="img/img7.png" alt=""></div>
+                        <p class="t1">户外广告牌喷漆布的选择技巧</p>
+                        <div class="line"></div>
+                        <p class="t2">种常见的广告形式。随着科学技术的发漆布是当今社会一杆市不断完善，广告牌困片显示真实。喷徐技术也在不断完善。</p>
+                        <p class="time">2019-07-05</p>
+                    </li>
+                    <li>
+                        <div class="img"><img src="img/img8.png" alt=""></div>
+                        <p class="t1">户外广告牌喷漆布的选择技巧</p>
+                        <div class="line"></div>
+                        <p class="t2">种常见的广告形式。随着科学技术的发漆布是当今社会一杆市不断完善，广告牌困片显示真实。喷徐技术也在不断完善。</p>
+                        <p class="time">2019-07-05</p>
+                    </li>
+                    <li>
+                        <div class="img"><img src="img/img9.png" alt=""></div>
+                        <p class="t1">户外广告牌喷漆布的选择技巧</p>
+                        <div class="line"></div>
+                        <p class="t2">种常见的广告形式。随着科学技术的发漆布是当今社会一杆市不断完善，广告牌困片显示真实。喷徐技术也在不断完善。</p>
+                        <p class="time">2019-07-05</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <ul class="zxbf">
+                    <li>
+                        <div class="img"><img src="img/img9.png" alt=""></div>
+                        <p class="t1">户外广告牌喷漆布的选择技巧</p>
+                        <div class="line"></div>
+                        <p class="t2">种常见的广告形式。随着科学技术的发漆布是当今社会一杆市不断完善，广告牌困片显示真实。喷徐技术也在不断完善。</p>
+                        <p class="time">2019-07-05</p>
+                    </li>
+                    <li>
+                        <div class="img"><img src="img/img8.png" alt=""></div>
+                        <p class="t1">户外广告牌喷漆布的选择技巧</p>
+                        <div class="line"></div>
+                        <p class="t2">种常见的广告形式。随着科学技术的发漆布是当今社会一杆市不断完善，广告牌困片显示真实。喷徐技术也在不断完善。</p>
+                        <p class="time">2019-07-05</p>
+                    </li>
+                    <li>
+                        <div class="img"><img src="img/img7.png" alt=""></div>
+                        <p class="t1">户外广告牌喷漆布的选择技巧</p>
+                        <div class="line"></div>
+                        <p class="t2">种常见的广告形式。随着科学技术的发漆布是当今社会一杆市不断完善，广告牌困片显示真实。喷徐技术也在不断完善。</p>
+                        <p class="time">2019-07-05</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <ul class="zxbf">
+                    <li>
+                        <div class="img"><img src="img/img8.png" alt=""></div>
+                        <p class="t1">户外广告牌喷漆布的选择技巧</p>
+                        <div class="line"></div>
+                        <p class="t2">种常见的广告形式。随着科学技术的发漆布是当今社会一杆市不断完善，广告牌困片显示真实。喷徐技术也在不断完善。</p>
+                        <p class="time">2019-07-05</p>
+                    </li>
+                    <li>
+                        <div class="img"><img src="img/img7.png" alt=""></div>
+                        <p class="t1">户外广告牌喷漆布的选择技巧</p>
+                        <div class="line"></div>
+                        <p class="t2">种常见的广告形式。随着科学技术的发漆布是当今社会一杆市不断完善，广告牌困片显示真实。喷徐技术也在不断完善。</p>
+                        <p class="time">2019-07-05</p>
+                    </li>
+                    <li>
+                        <div class="img"><img src="img/img9.png" alt=""></div>
+                        <p class="t1">户外广告牌喷漆布的选择技巧</p>
+                        <div class="line"></div>
+                        <p class="t2">种常见的广告形式。随着科学技术的发漆布是当今社会一杆市不断完善，广告牌困片显示真实。喷徐技术也在不断完善。</p>
+                        <p class="time">2019-07-05</p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <script>
+        $('.zxnav li').click(function(){
+            $('.zxnav li').removeClass('active');
+            $(this).addClass('active');
+            $('.zxb>li').removeClass('active');
+            $('.zxb>li').eq($(this).index()).addClass('active');
+        })
+    </script>
+
+
+    <div class="xx">
+        <ul class="clearfix">
+            <li>
+                <p class="p1">500</p>
+                <p class="p2">每年制作安装500多座</p>
+            </li>
+            <li>
+                <p class="p1">500</p>
+                <p class="p2">每年制作安装500多座</p>
+            </li>
+        </ul>
+        <ul class="clearfix">
+            <li>
+                <p class="p1">500</p>
+                <p class="p2">每年制作安装500多座</p>
+            </li>
+            <li>
+                <p class="p1">500</p>
+                <p class="p2">每年制作安装500多座</p>
+            </li>
+        </ul>
+    </div>
+
+
+
+
+    <div class="wd gWidth clearfix">
+        <div class="clearfix d1">
+            <h5 class="fl">留言问答</h5>
+            <p class="fr">已有<span>312696</span>位用户参与</p>
+        </div>
+        <div class="line"></div>
+        <ul class="u1">
+            <li>
+                <h6>标识标牌对现代企业意味着什么?</h6>
+                <p class="p1">
+                    <span>提问者：123</span>
+                    <span>时间：1248</span>
+                </p>
+                <p class="p2">企业标识标牌是描述企业形象的一种重要方法。它将企业的经营理念和文化，形成一个统一的整体，呈现给公众使其产生一致的认同感。</p>
+            </li>
+            <li>
+                <h6>标识标牌对现代企业意味着什么?</h6>
+                <p class="p1">
+                    <span>提问者：123</span>
+                    <span>时间：1248</span>
+                </p>
+                <p class="p2">企业标识标牌是描述企业形象的一种重要方法。它将企业的经营理念和文化，形成一个统一的整体，呈现给公众使其产生一致的认同感。</p>
+            </li>
+        </ul>
+        <div class="clearfix d1">
+            <h5 class="fl">在线留言</h5>
+        </div>
+        <div class="line"></div>
+        <p><input type="text" placeholder="姓名"></p>
+        <p><input type="text" placeholder="电话"></p>
+        <p><input type="text" placeholder="邮箱"></p>
+        <p class="clearfix">
+            <input type="text" placeholder="验证码" class="fl">
+            <div class="fr qimg"><img src="img/img12.png" alt=""></div>
+        </p>
+        <p><input type="text" placeholder="留言"></p>
+        <form>
+            <input type="submit" value="提交">
+        </form>
+    </div>
+
+    <div class="footer">
+        <div class="gWidth text">
+            <p>地址:河北省保定市清苑区田各庄工业区保衡路东侧</p>
+            <p>地址:河北省保定市清苑区田各庄工业区保衡路东侧</p>
+            <p>地址:河北省保定市清苑区田各庄工业区保衡路东侧</p>
+        </div>
+    </div>
+
+
+
+
+    <div class="yb_conct">
+        <div class="yb_bar">
+            <ul>
+                <li class="yb_1">
+                    <div class="nr">
+                        <div class="img"><img src="img/dh.png" alt=""></div>
+                        <p>在线客服</p>
+                    </div>
+                    <div class="tc">
+                    </div>
+                </li>
+                <li class="yb_2">
+                    <div class="nr">
+                        <div class="img"><img src="img/dh.png" alt=""></div>
+                        <p>联系电话</p>
+                    </div>
+                    <div class="tc">
+                    </div>
+                </li>
+                <li class="yb_3">
+                    <div class="nr">
+                        <div class="img"><img src="img/dh.png" alt=""></div>
+                        <p>微信咨询</p>
+                    </div>
+                    <div class="tc">
+                    </div>
+                </li>
+                <li class="yb_top">
+                    <div class="nr">
+                        <div class="img"><img src="img/back.png" alt=""></div>
+                    </div>
+                    <div class="tc">
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        $(function() {
+                // 悬浮窗口
+                $(".yb_conct").hover(function() {
+                    $(".yb_conct li .tc").css("width", "4.6rem");
+                }, function() {
+                    $(".yb_conct li .tc").css("width", "0rem");
+                });
+                // 返回顶部
+                $(".yb_top").click(function() {
+                    $("html,body").animate({
+                        'scrollTop': '0'
+                    }, 360)
+                });
+        });
+        
+    </script>
+</body>
+</html>

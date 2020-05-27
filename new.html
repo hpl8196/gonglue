@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>新闻资讯</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="font/iconfont.css">
+    <link rel="stylesheet" href="css/new.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script>
+        window.onload = window.onresize = function(){		 
+           var view_width = document.getElementsByTagName('html')[0].getBoundingClientRect().width;
+           //找到标签名为html的第一个
+           var _html = document.getElementsByTagName('html')[0];
+           //如果屏幕宽度大于640 
+           //就用 640/16=40
+           //小于640的时候 不确定 也是尺寸/40
+           view_width>640?_html.style.fontSize = 640 / 16 + 'px':_html.style.fontSize = view_width / 16 + 'px';
+           //最大网页尺寸640 
+           //最大字体（根字体大小） 40
+       }
+       </script>
+</head>
+<body>
+    <div class="head">
+        <div class="logo"><img src="img/logo.png" alt=""></div>
+        <div class="nav"><span class="iconfont icon-spread-h-bar"></span></div>
+    </div>
+    <div class="navxl navxl1">
+        <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="gygl.html">关于红马</a></li>
+            <li><a href="Construction.html">施工案例</a></li>
+            <li><a href="new.html">新闻资讯</a></li>
+            <li><a href="lxwm.html">联系我们</a></li>
+        </ul>
+        <div class="xlph"><img src="img/xlph.png" alt=""></div>
+    </div>
+    <div class="swiper-container banner">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide c1"><img src="img/banner1.png" alt=""></div>
+            <div class="swiper-slide c2"><img src="img/banner1.png" alt=""></div>
+            <div class="swiper-slide c3"><img src="img/banner1.png" alt=""></div>
+        </div>
+        
+        
+        <!-- 如果需要导航按钮 -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        
+        <!-- 如果需要滚动条 -->
+        
+    </div>
+    
+    <script>        
+        var mySwiper = new Swiper ('.swiper-container', {
+           // 垂直切换选项
+          loop: true, // 循环模式选项
+          
+          
+          // 如果需要前进后退按钮
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        })        
+    </script>
+    <script>
+    $('.nav').click(function(){
+        $('.nav span').toggleClass("icon-spread-h-bar");
+        $('.navxl').toggleClass("navxl1");
+        $('.nav span').toggleClass("icon-cha");
+        $('.navxl').toggleClass("navxl2");
+    })
+    </script>
+
+    <div class="content">
+        <div class="first">
+            <p><span>—</span> A <span>—</span></p>
+            <h5>新闻资讯</h5>
+        </div>
+        <p class="p1">广告资讯</p>
+        <ul class="list1 clearfix">
+            <li class="active">广告资讯</li>
+            <li>企业动态</li>
+            <li>媒体报道</li>
+        </ul>
+        <div class="line"></div>
+        <ul class="list2">
+            <li class="show">
+                <ul class="list2z gWidth">
+                    <li>
+                        <h6>标识标牌对现代企业意味着什么?</h6>
+                        <p>企业标识标牌是描述企业形象的一种重要方法。它将企业的经营理念和文化，形成一个统一... </p>
+                        <div class="line"></div>
+                        <p>
+                            <span class="sp1">2019.07.16</span>
+                            <a href="###">Read More</a>
+                            <span class="sp2">——</span>
+                        </p>
+                    </li>
+                    <li>
+                        <h6>标识标牌对现代企业意味着什么?</h6>
+                        <p>企业标识标牌是描述企业形象的一种重要方法。它将企业的经营理念和文化，形成一个统一... </p>
+                        <div class="line"></div>
+                        <p>
+                            <span class="sp1">2019.07.16</span>
+                            <a href="###">Read More</a>
+                            <span class="sp2">——</span>
+                        </p>
+                    </li>
+                    <li>
+                        <h6>标识标牌对现代企业意味着什么?</h6>
+                        <p>企业标识标牌是描述企业形象的一种重要方法。它将企业的经营理念和文化，形成一个统一... </p>
+                        <div class="line"></div>
+                        <p>
+                            <span class="sp1">2019.07.16</span>
+                            <a href="###">Read More</a>
+                            <span class="sp2">——</span>
+                        </p>
+                    </li>
+                    <li>
+                        <h6>标识标牌对现代企业意味着什么?</h6>
+                        <p>企业标识标牌是描述企业形象的一种重要方法。它将企业的经营理念和文化，形成一个统一... </p>
+                        <div class="line"></div>
+                        <p>
+                            <span class="sp1">2019.07.16</span>
+                            <a href="###">Read More</a>
+                            <span class="sp2">——</span>
+                        </p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <ul class="list2z gWidth">
+                    <li>
+                        <h6>2标识标牌对现代企业意味着什么?</h6>
+                        <p>企业标识标牌是描述企业形象的一种重要方法。它将企业的经营理念和文化，形成一个统一... </p>
+                        <div class="line"></div>
+                        <p>
+                            <span class="sp1">2019.07.16</span>
+                            <a href="###">Read More</a>
+                            <span class="sp2">——</span>
+                        </p>
+                    </li>
+                    <li>
+                        <h6>标识标牌对现代企业意味着什么?</h6>
+                        <p>企业标识标牌是描述企业形象的一种重要方法。它将企业的经营理念和文化，形成一个统一... </p>
+                        <div class="line"></div>
+                        <p>
+                            <span class="sp1">2019.07.16</span>
+                            <a href="###">Read More</a>
+                            <span class="sp2">——</span>
+                        </p>
+                    </li>
+                    <li>
+                        <h6>标识标牌对现代企业意味着什么?</h6>
+                        <p>企业标识标牌是描述企业形象的一种重要方法。它将企业的经营理念和文化，形成一个统一... </p>
+                        <div class="line"></div>
+                        <p>
+                            <span class="sp1">2019.07.16</span>
+                            <a href="###">Read More</a>
+                            <span class="sp2">——</span>
+                        </p>
+                    </li>
+                    <li>
+                        <h6>标识标牌对现代企业意味着什么?</h6>
+                        <p>企业标识标牌是描述企业形象的一种重要方法。它将企业的经营理念和文化，形成一个统一... </p>
+                        <div class="line"></div>
+                        <p>
+                            <span class="sp1">2019.07.16</span>
+                            <a href="###">Read More</a>
+                            <span class="sp2">——</span>
+                        </p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <ul class="list2z gWidth">
+                    <li>
+                        <h6>3标识标牌对现代企业意味着什么?</h6>
+                        <p>企业标识标牌是描述企业形象的一种重要方法。它将企业的经营理念和文化，形成一个统一... </p>
+                        <div class="line"></div>
+                        <p>
+                            <span class="sp1">2019.07.16</span>
+                            <a href="###">Read More</a>
+                            <span class="sp2">——</span>
+                        </p>
+                    </li>
+                    <li>
+                        <h6>标识标牌对现代企业意味着什么?</h6>
+                        <p>企业标识标牌是描述企业形象的一种重要方法。它将企业的经营理念和文化，形成一个统一... </p>
+                        <div class="line"></div>
+                        <p>
+                            <span class="sp1">2019.07.16</span>
+                            <a href="###">Read More</a>
+                            <span class="sp2">——</span>
+                        </p>
+                    </li>
+                    <li>
+                        <h6>标识标牌对现代企业意味着什么?</h6>
+                        <p>企业标识标牌是描述企业形象的一种重要方法。它将企业的经营理念和文化，形成一个统一... </p>
+                        <div class="line"></div>
+                        <p>
+                            <span class="sp1">2019.07.16</span>
+                            <a href="###">Read More</a>
+                            <span class="sp2">——</span>
+                        </p>
+                    </li>
+                    <li>
+                        <h6>标识标牌对现代企业意味着什么?</h6>
+                        <p>企业标识标牌是描述企业形象的一种重要方法。它将企业的经营理念和文化，形成一个统一... </p>
+                        <div class="line"></div>
+                        <p>
+                            <span class="sp1">2019.07.16</span>
+                            <a href="###">Read More</a>
+                            <span class="sp2">——</span>
+                        </p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+
+
+    <div class="center_a clearfix">
+        <a href="###" class="a1 fl">&lt;&lt;上一页</a>
+        <a href="###" class="fr">下一页&gt;&gt;</a>
+    </div>
+    <div class="footer">
+        <div class="gWidth text">
+            <p>地址:河北省保定市清苑区田各庄工业区保衡路东侧</p>
+            <p>地址:河北省保定市清苑区田各庄工业区保衡路东侧</p>
+            <p>地址:河北省保定市清苑区田各庄工业区保衡路东侧</p>
+        </div>
+    </div>
+
+    <script>
+		
+		
+		$('.list1 li').click(function(){
+			$('.list1 li').removeClass('active')
+			$(this).addClass('active')
+			
+			$('.list2>li').removeClass('show')
+			$('.list2>li').eq($(this).index()).addClass('show')
+		})
+		
+		
+		
+		
+		
+		
+	</script>
+	<div class="yb_conct">
+        <div class="yb_bar">
+            <ul>
+                <li class="yb_1">
+                    <div class="nr">
+                        <div class="img"><img src="img/dh.png" alt=""></div>
+                        <p>在线客服</p>
+                    </div>
+                    <div class="tc">
+                    </div>
+                </li>
+                <li class="yb_2">
+                    <div class="nr">
+                        <div class="img"><img src="img/dh.png" alt=""></div>
+                        <p>联系电话</p>
+                    </div>
+                    <div class="tc">
+                    </div>
+                </li>
+                <li class="yb_3">
+                    <div class="nr">
+                        <div class="img"><img src="img/dh.png" alt=""></div>
+                        <p>微信咨询</p>
+                    </div>
+                    <div class="tc">
+                    </div>
+                </li>
+                <li class="yb_top">
+                    <div class="nr">
+                        <div class="img"><img src="img/back.png" alt=""></div>
+                    </div>
+                    <div class="tc">
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        $(function() {
+                // 悬浮窗口
+                $(".yb_conct").hover(function() {
+                    $(".yb_conct li .tc").css("width", "4.6rem");
+                }, function() {
+                    $(".yb_conct li .tc").css("width", "0rem");
+                });
+                // 返回顶部
+                $(".yb_top").click(function() {
+                    $("html,body").animate({
+                        'scrollTop': '0'
+                    }, 360)
+                });
+        });
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+.first{
+    width: 2.6rem;
+    height: 2.6rem;
+    background-color: #145FE6;
+	margin-top: -1.4rem;
+	margin-left: .5rem;
+	float: left;
+	position: relative;
+	z-index: 997;
+}
+.first p{
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    line-height: 1.125rem;
+    margin-top: .2rem;
+}
+.first p span{
+    color: #76A0F0;
+}
+.first h5{
+    font-size: .6rem;
+    color: #fff;
+    text-align: center;
+    line-height: 1.4rem;
+}
+.content .p1{
+	background: url(../images/youjiao.png) no-repeat left center;
+	font-size: 0.375rem;
+    color:#333333;
+    margin-left: 26%;
+	padding-left:0.55rem;
+	line-height: 0.9rem;
+    margin-bottom: 0.45rem;
+    
+}
+.content .list1{
+	padding-left: 0.3rem;
+	display: flex;
+}
+.content .list1 li{
+	font-size: 0.375rem;
+	flex: 1;
+	text-align: center;
+	line-height: 1rem;
+	
+}
+.content .line{
+	height: 0.05rem;
+	background-color:#EBEBEB ;
+	margin-top: -0.05rem;
+}
+.content .list1 .active{
+	color:red;
+	border-bottom: 3px solid #1259E6;
+}
+.content .list1 li:nth-child(4){
+	margin-right: 0;
+}
+
+
+.content .list2>li{
+    display: none;
+}
+.content .list2 .show{
+    display: block;
+}
+
+
+.content .list2z li{
+    width: calc(100% - 1.2rem);
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: .625rem;
+    background-color:#F3F4F8;
+    height: 193px;
+    padding-left: .6rem;
+    padding-right: .6rem;
+}
+.content .list2z li h6{
+    margin-top: 1rem;
+    font-size: .5rem;
+    line-height: 3;
+}
+.content .list2z li p{
+    font-size: .35rem;
+    line-height: 2;
+    color: #7B7A7A;
+}
+.content .list2z li .line{
+    margin-top: .75rem;
+    margin-bottom: .8rem;
+}
+.content .list2z li .sp1{
+    float: left;
+}
+.content .list2z li .sp2{
+    float: right;
+    margin-right: 1rem;
+}
+.content .list2z li a{
+    float: right;
+    color: #000;
+}
+
+.center_a{
+    width: 9rem;
+    height: .975rem;
+   
+    margin: .8rem auto;
+}
+.center_a a{
+    display: block;
+    color: #fff;
+    width: 4rem;
+    height: 1.4rem;
+    line-height: 1.4rem;
+    font-size: .35rem;
+    text-align: center;
+    background-color: #1259E6;
+}
+.footer{
+    background-color: #4A4A4A;
+    overflow: hidden;
+}
+.footer .text{
+    margin-top: .25rem;
+    margin-bottom: .4rem;
+}
+.footer p{
+    font-size: .4rem;
+    color: #A9A8A8;
+    line-height: 2;
+}

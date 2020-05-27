@@ -1,0 +1,185 @@
+*{margin: 0;padding: 0;}
+.box{
+    width: 100%;
+    position: relative;
+}
+.top{
+    width: 414px;
+    height:47px;
+}
+.top .tu1{
+    height: 40px;
+    width: 152px;
+    margin-left: 131px;
+    margin-top: 7px;
+}
+.top .tu2{
+    width: 26px;
+    height: 21px;
+    margin-left: 93px;
+    margin-top: 18px;
+}
+.top2{
+    width: 414px;
+    height: 180px;
+    margin-top: 10px;
+}
+.lxwm_tu{
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    left: 12px; top: 217px;
+}
+.sanjiao{
+    width:312px;
+    height:70px;
+    margin-left: 102px;
+}
+.sanjiao img{
+    width: 7px;
+    height: 11px;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+.sanjiao p{
+    display: inline-block;
+    width: 70px;
+    height: 15px;
+    font-family: SimHei;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 26px;
+    letter-spacing: 1px;
+    color: #333333;
+    margin-top:-23px;
+}
+.xinxi{
+    height: 162px;
+    margin-top: 30px;
+    margin-left: 12px;
+}
+.xinxi .lxdh_yx{
+    height: 81px;
+}
+.xinxi .lxdh_yx>p{
+    width: 76px;
+    height: 17px;
+    font-family: SimHei;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 26px;
+    letter-spacing: 1px;
+    color: #333333;
+    margin-top:20px;
+}
+.xinxi .lxdh_yx div{
+    margin-top:15px;
+}
+.xinxi .lxdh_yx div>p{
+    width:280px;
+    height:25px;
+    font-family: SimHei;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 24px;
+    letter-spacing: 1px;
+    color: #919090;
+}
+#dituContent{
+    width:385px;height:286px;border:#ccc solid 1px;
+    margin-left: 12px;
+    margin-top: 20px;
+    background-color: aqua;
+}
+.dizhi{
+    width: 385px;
+    height: 124px;
+    margin-top: 15px;
+    position: relative;
+}
+.dizhi img{
+    position: absolute;
+    top:-7px; left:160px;
+}
+.dizhi div{
+    width: 385px;
+    height: 54px;
+    border-radius: 5px;
+    margin-left: 12px;
+    margin-top: 22px;
+    background-color: #1259E6;
+    margin-top: 7px;
+    position: relative;
+}
+.dizhi div>p{
+    width: 80px;
+	height: 19px;
+	font-family: SimHei;
+	font-size: 20px;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 26px;
+	letter-spacing: 0px;
+    color: #ffffff;
+    padding-top: 20px;
+    padding-left: 12px;
+}
+.dizhi .dizhi2{
+    height:70px;
+    width: 385px;
+    margin-left:0px;
+}
+.dizhi .dizhi2 p{
+    width: 367px;
+	height:10px;
+	font-family: SimHei;
+	font-size: 15px;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height:10px;
+	letter-spacing: 0px;
+	color: #ffffff;
+	opacity: 0.62;
+}
+.erweima{
+    width: 385px;
+    height: 200px;
+    margin-left: 12px;
+    margin-top: 10px; 
+}
+.erweima .left{
+    float: left;
+}
+.erweima .right{
+    float: right;
+}
+.erweima  p{
+    text-align: center;
+}
+.dibu{
+    width: 100%;
+    height: 110px;
+    background-color: #4A4A4A;
+    margin-top: 36px;
+}
+.dibu>div{
+    width: 377px;
+    height: 70px;
+    margin-left: 12px;
+    padding-top: 16px;
+}
+.dibu>div p{
+    width: 377px;
+	height:25px;
+	font-family: SimHei;
+	font-size: 13px;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 28px;
+	letter-spacing: 0px;
+    color: #bfbebe;
+    
+}
